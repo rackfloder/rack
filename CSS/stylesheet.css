@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+h6 {
+    color: #d8d8d8;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover {
+    color: currentColor;
+}
+
+.heads {
+    width: 100vw;
+    height: 50px;
+    background-color: #e5e5e5;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
+    display: flex;
+    align-items: center;
+}
+
+.heads .container-fluid {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navb-logo img {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navb-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.heads .item {
+    text-align: center;
+    margin-inline: 15%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #321047;
+    padding: 5px, 0;
+    transition: all .1s ease;
+    border-bottom: 0px solid #8000ff;
+    border-top: 0px solid #8000ff;
+    cursor: pointer;
+}
+
+.heads .item:hover {
+    font-size: 16.5px;
+    border-bottom: 3px solid #8000ff;
+    border-top: 3px solid #8000ff;
+
+}
+
+.hds {
+    text-align: center;
+    margin-inline: 15%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #321047;
+    padding: 5px, 0;
+    transition: all .1s ease;
+    border-bottom: 0px solid #8000ff;
+    border-top: 0px solid #8000ff;
+    cursor: pointer;
+}
+
+.hds:hover {
+    font-size: 16.5px;
+    border-bottom: 3px solid #8000ff;
+    border-top: 3px solid #8000ff;
+}
+
+
+.heads .item-button a {
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #321047;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    color: #e5e5e5;
+    transition: all .2s ease;
+    border-radius: 30px;
+}
+
+.heads .item-button a:hover {
+    background-color: #8000ff;
+    font-size: 16.5px;
+    width: 105px;
+    height: 50;
+}
+
+.item-btn {
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #321047;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    color: #e5e5e5;
+    transition: all .2s ease;
+    border-radius: 30px;
+}
+
+.item-btn:hover {
+    background-color: #8000ff;
+    font-size: 16.5px;
+}
+
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+
+}
+
+.toggle .button {
+    background-color: #d2d2d2;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+}
+
+.toggle .button::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    bottom: 5px;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+
+.toggle input:checked+.button {
+    background-color: #8000ff;
+}
+
+.toggle input:checked+.button::before {
+    transform: translateX(40px);
+}
+
+.toggle input {
+    display: none;
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    /* border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color); */
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    margin: 15px;
+    padding: 5px;
+    width: 100%;
+    max-width: 700px;
+    background: rgba(0, 0, 0, 10%);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+.search-bar input {
+    align-items: center;
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px 20px;
+}
+
+.bgn {
+    background: rgba(0, 0, 0, 10%);
+}
+
+.slide-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    width: 250px;
+    height: 250px;
+}
+
+/* new boot */
+
+button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #321047;
+}
+
+.navbar {
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active {
+    color: #8000ff;
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+hr {
+    width: 100px;
+    height: 3px;
+    background-color: #8000ff;
+}
+
+.star{
+    padding: 10px 0;
+}
+
+.star i{
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+/* mobile nav */
+
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+#bar {
+    font-size: 1.5rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+
+#bar:hover,
+#bar.active {
+    color: #8000ff;
+}
+
+@media only screen and (max-width: 991px) {
+
+    #navbarSupportedContent>ul>li {
+        margin: 0.1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    #navbarSupportedContent>ul>li:nth-child(n)>a {
+        padding: 10px 0;
+    }
+}
+
+#home {
+    background-image: url("../Images/cover/infrarack_cover.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top 60px center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#new .one img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#new .one .details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+    border-radius: 30px;
+}
+
+#new .one:hover .details {
+    cursor: pointer;
+    background-color: rgba(169, 145, 228, 0.7);
+}
+
+#new .one .details button {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #321047;
+    background: none;
+    text-transform: uppercase;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+    border-bottom: 2px solid #321047;
+}
+
+#new .one .details button:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#new .one:nth-child(n) .details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*products*/
+
+.product {
+    cursor: pointer;
+    margin-bottom: 2rem;
+    padding: 10px;
+}
+
+.product img {
+    transition: 0.3s all;
+    width: 60%;
+    height: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.product:hover img {
+    opacity: 0.7;
+
+}
+
+.product .buy-btn {
+    background-color: #321047;
+}
+
+
+footer{
+    background-color: #222;
+}
+
+footer h5{
+    color: #d8d8d8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer li{
+    padding-bottom: 4px;
+}
+
+footer li a{
+    font-size: 0.8rem;
+    color: #999;
+}
+
+footer li a:hover{
+    color: #d8d8d8;
+}
+
+footer p {
+    color: #999;
+    font-size: 0.8rem;
+}
