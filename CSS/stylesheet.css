@@ -375,6 +375,7 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    border-radius: 30px;
 }
 
 #new .one .details {
