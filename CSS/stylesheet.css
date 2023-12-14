@@ -384,11 +384,13 @@ hr {
     top: 0;
     left: 0;
     transition: 0.3s ease;
+    color: #999;
     border-radius: 30px;
 }
 
 #new .one:hover .details {
     cursor: pointer;
+    color: #fff;
     background-color: rgba(169, 145, 228, 0.7);
 }
 
